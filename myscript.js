@@ -10,10 +10,10 @@ keypress.addEventListener('click',function(e){
 	} else if(e.target.className === 'opr') {
 		if(opr !== '') {
 			switch(opr) {
-			case '+': result = parseInt(result) + parseInt(temp); break;
-			case '-': result = parseInt(result) - parseInt(temp); break;
-			case '*': result = parseInt(result) * parseInt(temp); break;
-			case '/': result = parseInt(result) / parseInt(temp); break;
+			case '+': result = parseFloat(result) + parseFloat(temp); break;
+			case '-': result = parseFloat(result) - parseFloat(temp); break;
+			case '*': result = parseFloat(result) * parseFloat(temp); break;
+			case '/': result = parseFloat(result) / parseFloat(temp); break;
 			}
 		display.innerText = result;
 		}
@@ -24,10 +24,10 @@ keypress.addEventListener('click',function(e){
 		temp = '';
 	} else if(e.target.className === 'eval') {
 		switch(opr) {
-			case '+': result = parseInt(result) + parseInt(temp); break;
-			case '-': result = parseInt(result) - parseInt(temp); break;
-			case '*': result = parseInt(result) * parseInt(temp); break;
-			case '/': result = parseInt(result) / parseInt(temp); break;
+			case '+': result = parseFloat(result) + parseFloat(temp); break;
+			case '-': result = parseFloat(result) - parseFloat(temp); break;
+			case '*': result = parseFloat(result) * parseFloat(temp); break;
+			case '/': result = parseFloat(result) / parseFloat(temp); break;
 		}
 		display.innerText = result;
 		temp = '';
