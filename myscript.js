@@ -38,7 +38,7 @@ keypress.addEventListener('click',function(e){
 		opr = '';
 		display.innerText = '';
 	}
-	console.log(temp);
-	console.log(opr);
-	console.log(result);
+	// console.log(temp);
+	// console.log(opr);
+	// console.log(result);
 });
