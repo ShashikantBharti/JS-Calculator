@@ -30,13 +30,15 @@ keypress.addEventListener('click',function(e){
 			case '/': result = parseInt(result) / parseInt(temp); break;
 		}
 		display.innerText = result;
+		temp = '';
+		opr = '';
 	} else{
 		temp = '';
 		result = '';
 		opr = '';
 		display.innerText = '';
 	}
-	// console.log(temp);
-	// console.log(opr);
-	// console.log(result);
+	console.log(temp);
+	console.log(opr);
+	console.log(result);
 });
